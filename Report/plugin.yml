@@ -1,0 +1,23 @@
+name: ReportPlugin
+main: MazaiCrafty\MainClass
+version: 0.3
+api: [3.0.0,3.0.0-ALPHA6]
+load: POSTWORLD
+author: MazaiCrafty
+description: Your report
+commands:
+ report:
+  description: "Write Report"
+ report.admin:
+  description: "Report list"
+permissions:
+ report:
+  default: true
+  description: "Allows using all the Report things"
+  children:
+   report.command.report:
+   default: true
+   description: "Allows using all the Report commands"
+   report.command.reports:
+   default: true
+   description: "Allows using all the Report commands"
